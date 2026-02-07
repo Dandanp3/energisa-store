@@ -1,7 +1,7 @@
 # ⚡ Energisa Store
 
-> ⚠️ **Parte 1 do Projeto**
-> Este repositório representa **apenas a primeira etapa da solução**, focada exclusivamente na **parte da loja (marketplace)** do projeto desenvolvido no Hackathon da Energisa.
+> ⚠️ **MVP – Parte 1 do Projeto**
+> Este repositório representa **apenas um MVP (Produto Mínimo Viável)** e a **primeira etapa da solução**, focada exclusivamente na **parte da loja (marketplace)** do projeto desenvolvido no Hackathon da Energisa.
 
 **Projeto desenvolvido durante um Hackathon da Energisa**
 
