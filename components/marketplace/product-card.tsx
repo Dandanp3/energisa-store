@@ -97,7 +97,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
                         <span>
                             {product.installments}x de {formatPrice(product.installmentPrice)}
                         </span> {" "}
-                         sem juros-
+                         sem juros
                     </p>
                 </div>
 
