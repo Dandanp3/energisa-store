@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Energisa Store
 
-## Getting Started
+> ⚠️ **Parte 1 do Projeto**
+> Este repositório representa **apenas a primeira etapa da solução**, focada exclusivamente na **parte da loja (marketplace)** do projeto desenvolvido no Hackathon da Energisa.
 
-First, run the development server:
+**Projeto desenvolvido durante um Hackathon da Energisa**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 **Link do site hospedado:** *https://energisa-store.vercel.app/*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Sobre o Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O **Energisa Store** é uma proposta de plataforma digital inspirada em grandes marketplaces como Amazon e Mercado Livre, porém totalmente voltada para **equipamentos e materiais utilizados em obras e construções**, como vergalhões, andaimes, antenas, escadas, entre outros itens que podem oferecer **riscos quando utilizados próximos à rede elétrica**.
 
-## Learn More
+O projeto nasce com o objetivo de **unir tecnologia, segurança e prevenção**, ajudando a reduzir acidentes elétricos por meio de informação inteligente no momento da compra.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Intuito e Problema Resolvido
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acidentes envolvendo a rede elétrica muitas vezes acontecem por **falta de informação ou prevenção** durante obras e instalações. Equipamentos como andaimes, vergalhões e antenas, quando usados sem cuidado próximo à rede elétrica, representam riscos graves.
 
-## Deploy on Vercel
+O **Energisa Store** atua justamente nesse ponto crítico, levando a conscientização para o ambiente digital de compras.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Como a Solução Funciona
+
+A plataforma propõe a integração entre:
+
+* **APIs de grandes redes de materiais de construção**, responsáveis pelos dados de produtos e vendas;
+* **Sistemas de alvarás de prefeituras**, indicando obras em andamento;
+* **Mapa da rede elétrica da Energisa**;
+* **Inteligência Artificial**, responsável pela análise de risco.
+
+### Fluxo Inteligente:
+
+* Quando uma **nota fiscal** de itens como *andaime*, *vergalhão* ou *antena* é emitida **ou** quando um **alvará de obra** é liberado;
+* A **IA cruza o CEP da entrega** com o **mapa da rede elétrica da Energisa**;
+* Caso exista risco de proximidade com a rede elétrica, o sistema pode:
+
+  * Alertar o comprador;
+  * Exibir orientações de segurança;
+  * Gerar planos de ação ou cuidados específicos.
+
+---
+
+## 🛒 Experiência do Usuário
+
+O Energisa Store foi pensado para ser **amigável, moderno e detalhado**, como qualquer grande loja online:
+
+* Interface intuitiva;
+* Cards de produtos claros e organizados;
+* Página individual de cada item com:
+
+  * Descrição completa;
+  * Informações de compra;
+  * Campo específico para informar e validar o **CEP**, permitindo o cruzamento inteligente de dados e análise de risco.
+
+Tudo isso mantendo uma identidade visual acessível e profissional.
+
+---
+
+## 🌱 Impacto Esperado
+
+* Redução de acidentes elétricos em obras;
+* Maior conscientização da população;
+* Uso da tecnologia como aliada da segurança;
+* Fortalecimento do papel da Energisa como empresa inovadora e socialmente responsável.
+
+---
+
+## 🚀 Conclusão
+
+O **Energisa Store** não é apenas um marketplace, mas uma **ferramenta de prevenção**, educação e segurança, mostrando como a tecnologia pode salvar vidas quando aplicada no momento certo — antes do risco acontecer.
