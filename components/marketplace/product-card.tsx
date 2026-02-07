@@ -92,12 +92,12 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
                     <p className="text-xs text-muted-foreground">
                         {formatPrice(product.price)}
                     </p>
-                    <p>
+                    <p className="text-xs text-muted-foreground">
                         em até{" "}
-                        <span>
+                        <span className="font-semibold text-primary">
                             {product.installments}x de {formatPrice(product.installmentPrice)}
                         </span> {" "}
-                         sem juros-
+                         sem juros
                     </p>
                 </div>
 
