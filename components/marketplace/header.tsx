@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-
+import Image from "next/image"
 import { useState } from "react"
 import { Search, ShoppingCart, Menu, X, MapPin, User } from "lucide-react"
 import { useCart } from "@/lib/cart-context"
@@ -44,29 +44,41 @@ export function Header({ onCategoryChange, onSearch, activeCategory }: HeaderPro
           {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
 
-        {/* Site name (editable) */}
-        <div className="mr-4 shrink-0">
-          {isEditingName ? (
-            <input
-              type="text"
-              value={siteName}
-              onChange={(e) => setSiteName(e.target.value)}
-              onBlur={() => setIsEditingName(false)}
-              onKeyDown={(e) => e.key === "Enter" && setIsEditingName(false)}
-              className="w-40 rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-2 py-1 font-heading text-lg font-bold text-primary-foreground outline-none focus:border-primary md:w-56 md:text-xl"
-              autoFocus
-            />
-          ) : (
-            <button
-              type="button"
-              onClick={() => setIsEditingName(true)}
-              className="font-heading text-lg font-bold tracking-tight text-primary-foreground transition-colors hover:text-primary md:text-xl"
-              title="Clique para editar o nome do site"
-            >
-              {siteName}
-            </button>
-          )}
-        </div>
+        {/* Site name com Logo */}
+        <div className="mr-4 flex shrink-0 items-center gap-3">
+        
+        <Image
+            src="/icon.png" 
+            alt="Logo"
+            width={35}
+            height={35}
+            className="h-8 w-8 object-contain md:h-9 md:w-9"
+        />
+
+        {/* Lógica do Nome do Site */}
+            <div>
+                {isEditingName ? (
+                <input
+                    type="text"
+                    value={siteName}
+                    onChange={(e) => setSiteName(e.target.value)}
+                    onBlur={() => setIsEditingName(false)}
+                    onKeyDown={(e) => e.key === "Enter" && setIsEditingName(false)}
+                    className="w-40 rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-2 py-1 font-heading text-lg font-bold text-primary-foreground outline-none focus:border-primary md:w-56 md:text-xl"
+                    autoFocus
+                />
+                ) : (
+                <button
+                    type="button"
+                    onClick={() => setIsEditingName(true)}
+                    className="font-heading text-lg font-bold tracking-tight text-primary-foreground transition-colors hover:text-primary md:text-xl"
+                    title="Clique para editar o nome do site"
+                >
+                    {siteName}
+                </button>
+                )}
+            </div>
+            </div>
 
         {/* Search bar */}
         <form

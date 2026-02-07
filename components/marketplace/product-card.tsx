@@ -119,3 +119,5 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
         </article>
     )
 }
+
+export { formatPrice, StarRating }
