@@ -83,11 +83,11 @@ function MarketplaceContent() {
         </div>
 
         {filteredProducts.length === 0 ? (
-          <div>
-            <p>
+          <div className="flex flex-col items-center justify-center py-20">
+            <p className="text-lg font-semibold text-foreground">
                 Nenhum produto encontrado
             </p>
-            <p>
+            <p className="text-sm text-muted-foreground">
               Tente buscar por outro termo ou categoria
             </p>
           </div>
