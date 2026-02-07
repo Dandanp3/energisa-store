@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from 'next'
 import { Poppins, Nunito } from 'next/font/google'
 
 import './globals.css'
-// 1. ADICIONE ESTE IMPORT (Verifique se o caminho do seu arquivo está correto)
 import { CartProvider } from "@/lib/cart-context" 
 
 const _poppins = Poppins({
@@ -19,8 +18,13 @@ const _nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: 'Marketplace de Equipamentos de Construção',
+  title: 'Energisa | Store',
   description: 'Encontre os melhores equipamentos e materiais de construção com segurança e os melhores preços.',
+  
+  icons: {
+    icon: '/icon.png', 
+    apple: '/apple-icon.png', 
+  },
 }
 
 export const viewport: Viewport = {
