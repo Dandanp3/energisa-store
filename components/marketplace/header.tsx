@@ -120,7 +120,7 @@ export function Header({ onCategoryChange, onSearch, activeCategory }: HeaderPro
           <button
             type="button"
             onClick={() => setIsCartOpen(true)}
-            className="relative rounded-full p-2 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+            className="relative rounded-full p-2 text-primary-foreground transition-colors hover:bg-primary-foreground/10 cursor-pointer"
             aria-label={`Carrinho com ${totalItems} itens`}
           >
             <ShoppingCart className="h-6 w-6" />
@@ -164,7 +164,7 @@ export function Header({ onCategoryChange, onSearch, activeCategory }: HeaderPro
               key={cat}
               type="button"
               onClick={() => onCategoryChange(cat)}
-              className={`whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+              className={`whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium transition-all cursor-pointer ${
                 activeCategory === cat
                   ? "bg-primary text-primary-foreground"
                   : "text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"

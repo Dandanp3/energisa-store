@@ -58,7 +58,7 @@ export function CartDrawer() {
             className="rounded-full p-1.5 text-card-foreground transition-colors hover:bg-muted"
             aria-label="Fechar carrinho"
           >
-            <X className="h-5 w-5" />
+            <X className="h-5 w-5 cursor-pointer" />
           </button>
         </div>
 

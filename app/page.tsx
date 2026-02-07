@@ -126,7 +126,7 @@ function MarketplaceContent() {
       {/* Footer */}
       <footer className="bg-foreground px-4 py-8 text-center">
         <p className="text-xs text-primary-foreground/50">
-          Este é um protótipo demonstrativo (MVP). Nenhum pagamento real é processado.
+          Este é um protótipo demonstrativo (MVP).
         </p>
         <p className="mt-1 text-xs text-primary-foreground/30">
           Marketplace de Equipamentos de Construção - Protótipo de Segurança Energisa
